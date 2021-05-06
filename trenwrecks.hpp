@@ -2,7 +2,10 @@
 #define TRENWRECKS_H_INCLUDED
 
 #include <iostream>
+#include <memory>
 #include <vector>
+#include <time.h>
+
 using namespace std;
 
 class station{
@@ -23,6 +26,7 @@ private:
 	size_t velocityIncrement = 1;
 public:
 	train();
+	~train() { velocityIncrement = 1; };
 };
 
 class interface : public train{

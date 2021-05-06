@@ -11,18 +11,17 @@ void station::setvelocity(size_t velocityAddPlus) {
 		velocity = velocity;
 	}
 }
-void station::setlineTrain(size_t line[]){
+void station::setlineTrain(size_t line[]) {
 
 }
 
 train::train() {
 	while (velocityIncrement < 200) {
 		this->setvelocity(velocityIncrement);
-		print();
 		velocityIncrement++;
 	}
 }
 
 void interface::print() {
-	cout << getvelocity() << endl;
+	cout << this->getvelocity() << endl;
 }
