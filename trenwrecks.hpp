@@ -7,7 +7,7 @@ using namespace std;
 
 class station{
 private:
-	vector<size_t> lineTrain = {0,1,2,3,4,5,0,6,1,2};
+	vector<size_t> lineTrain = {0,1,2,3,4,5,6,7,8,9};
 	size_t velocity = 0;
 	size_t velocity_recomend = 40;
   size_t velocity_minima = 30;

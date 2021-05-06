@@ -17,8 +17,9 @@ void station::setlineTrain(size_t line[]){
 
 train::train() {
 	while (velocityIncrement < 200) {
-		velocityIncrement++;
 		this->setvelocity(velocityIncrement);
+		print();
+		velocityIncrement++;
 	}
 }
 
