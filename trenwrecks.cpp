@@ -22,6 +22,10 @@ train::train() {
 	}
 }
 
+train::train(size_t linha_inicial, size_t linha_final) {
+	rand() % (linha_final - linha_inicial + 1) + linha_inicial;
+}
+
 void interface::print() {
 	cout << this->getvelocity() << endl;
 }

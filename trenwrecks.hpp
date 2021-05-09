@@ -4,7 +4,7 @@
 #include <iostream>
 #include <memory>
 #include <vector>
-#include <time.h>
+#include <ctime>
 
 using namespace std;
 
@@ -26,6 +26,7 @@ private:
 	size_t velocityIncrement = 1;
 public:
 	train();
+	train(size_t linha_inicial, size_t linha_final);
 	~train() { velocityIncrement = 1; };
 };
 
