@@ -2,3 +2,10 @@
 
 # smart-station
 A smart station that controls vehicles
+
+## Compile
+```C++
+ g++  main.cpp trenwrecks.cpp
+```
+## license
+there license is MIT
