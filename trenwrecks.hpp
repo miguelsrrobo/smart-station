@@ -10,7 +10,7 @@ using namespace std;
 
 class station{
 private:
-	vector<size_t> lineTrain = {0,1,2,3,4,5,6,7,8,9};
+	vector<size_t> lineTrain = {0,1,2,3,4,5,6,7,8,9,10};
 	size_t velocity = 0;
 	size_t velocity_recomend = 40;
   size_t velocity_minima = 30;
@@ -22,10 +22,11 @@ public:
 
 class train : public station {
 private:
+	size_t linha_inicial = 0;
+	size_t linha_final = 10;
 	size_t velocityIncrement = 1;
 public:
 	train();
-	train (size_t linha_inicial, size_t linha_final);
 	~train () { velocityIncrement = 1; };
 	void randomTrainLine ();
 };
