@@ -16,8 +16,8 @@ private:
   size_t velocity_minima = 30;
 	size_t velocity_maxima = 150;
 public:
-	void setvelocity (size_t velocityAddPlus);
-	const int getvelocity () { return velocity; };
+	void setvelocity(size_t velocityAddPlus);
+	const int getvelocity() { return velocity; };
 };
 
 class train : public station {
@@ -27,13 +27,15 @@ private:
 	size_t velocityIncrement = 1;
 public:
 	train();
-	~train () { velocityIncrement = 1; };
-	void randomTrainLine ();
+	~train() { velocityIncrement = 1; };
+	size_t getlinha_inicial() { return linha_inicial; };
+	size_t getlinha_final() { return linha_final; };
+	size_t randomTrainLine ();
 };
 
 class interface : public train{
 public:
-	void print ();
+	void print();
 };
 
 #endif

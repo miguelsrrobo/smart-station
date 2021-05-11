@@ -13,16 +13,16 @@ void station::setvelocity(size_t velocityAddPlus) {
 }
 
 train::train() {
-	while (velocityIncrement < 200) {
+	while(velocityIncrement < 200) {
 		this->setvelocity(velocityIncrement);
 		velocityIncrement++;
 	}
 }
 
-void randomTrainLine () {
-	linha_final = rand() % (linha_final - linha_inicial + 1) + linha_inicial;
+size_t randomTrainLine() {
+	return rand() % (getlinha_final() - getlinha_inicial() + 1) + getlinha_inicial();
 }
 
-void interface::print () {
+void interface::print() {
 	cout << this->getvelocity() << endl;
 }
