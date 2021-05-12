@@ -19,9 +19,9 @@ train::train() {
 	}
 }
 
-size_t randomTrainLine() {
-	return rand() % (getlinha_final() - getlinha_inicial() + 1) + getlinha_inicial();
-}
+//size_t randomTrainLine() {
+	//return rand() % (getlinha_final() - getlinha_inicial() + 1) + getlinha_inicial();
+//}
 
 void interface::print() {
 	cout << this->getvelocity() << endl;
